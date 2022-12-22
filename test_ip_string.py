@@ -1,9 +1,15 @@
 #!/usr/bin/env python
 
+"""
+https://www.codewars.com/kata/515decfd9dcfc23bb6000006/python
+"""
+
 import pytest
 import re
 
 """
+https://www.codewars.com/kata/515decfd9dcfc23bb6000006/python
+
 import socket
 
 def is_valid_IP(addr):
