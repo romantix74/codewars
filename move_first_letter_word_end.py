@@ -12,6 +12,11 @@ pig_it('Pig latin is cool') # igPay atinlay siay oolcay
 pig_it('Hello world !')     # elloHay orldway !
 """
 
+# from codewars solution
+def pig_it(text):
+    lst = text.split()
+    return ' '.join( [word[1:] + word[:1] + 'ay' if word.isalpha() else word for word in lst])
+
 @pytest.mark.parametrize("input_, expected",
                          [('Pig latin is cool', 'igPay atinlay siay oolcay'),
                           ('Hello world !', 'elloHay orldway !')])
